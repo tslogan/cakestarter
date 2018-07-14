@@ -1,30 +1,27 @@
-messages = []
 
-messages << "You receive a box of cake mix with an egg cracked inside via Ground shipping."
-messages << "You have received: An egg. Keep going!"
-messages << "You have received: One badly burnt cake."
-messages << "You have received flour, sugar, eggs, butter, baking soda, baking powder, and a job application: Get CakeStarted!"
-messages << "You have received: Cake mix in plastic packet."
-messages << "You have received: One very dusty fruitcake. Ew."
-messages << "You have received: A lie."
-messages << "Order lost! Try again!"
-messages << "You have received: Buttercream frosting. Keep going!"
-messages << "No cake for you! Try again!"
-messages << "Your cake arrives late and is delivered in the rain by a sad clown. It smells faintly of balloons, and tastes of despair."
-messages << "You have received: Flour. Keep going!"
-messages << "Success? You have received: A Cake album, which is delivered by a girl with a short skirt annd a looong...jacket."
-messages << "You have received: Naruto kamaboko! Fish cake is technically a cake!"
-messages << "Oh no...Your cake has been eaten by the mailman. Try again!"
-messages << "A foul smelling package arrives with a note that says: 'I hope you like sh*t brownies, because these are brownies. Made out of sh*t.'"
-messages << "Success! You have received: Your cake, as ordered. Kinda anti-climatic, really."
-messages << "You have received a cake with the following message: 01001101 01100001 01100100 01100101 00100000 01111001 01101111 01110101 00100000 01101100 01101111 01101111 01101011"
-messages << "You have received: Sugar. Keep going!"
-messages << "Oh no...You have received: Yellow cake uranium. (Also helicopters and sirens in the distance)"
-messages << "Success! You have received: A fully baked and frosted cake! It is so unspeakably glorious that a passing angel stops to weep tears of heavenly joy. Understandably, this excess sodium results in ruined cake. Better luck next time!"
-messages << "You have received what you assume is flour. The authorities responsible for confiscating hold some rather different notions altogether."
-messages << "You have received: Baking soda. Keep going!"
-messages << "You have received: Baking powder. Keep going!"
-messages << "You have received: Butter. Keep going!"
-messages << "Success! You have received: A fully baked and frosted cake! It is delivered safely to your doorstep and it is handed to you with a flourish by non other than Duff Goldman. YOU WIN!"
+class Cake
+  def messages
+    messages = [
+      "You receive a rancid parcel via Ground shipping containing a dead fish from eBay.",
+      "Since you asked for rush delivery, your cake was 'baked' with a flamethrower. You have received: One badly burnt cake.",
+      "Success! You have received: A Cake album delivered by a girl with a short skirt annd a looong...jacket!",
+      "You have received: One very dusty fruitcake. Ew.",
+      "You have received: A lie.",
+      "Order lost! Try again!",
+      "No cake for you! Try again!",
+      "Your cake is delivered in the rain by a sad clown. It tastes funny.",
+      "Success! You have received: A fully baked and frosted cake! It is so unspeakably glorious that you weep tears of joy. Understandably, this excess sodium results in ruined cake. Better luck next time!",
+      "You have received: Naruto kamaboko!",
+      "Your cake has been eaten by the mailman. Try again!",
+      "A foul smelling package arrives from Florida with a note: 'I didn't feel like making your cake. I hope you like sh*t brownies.'",
+      "Success! You have received: Your cake, as ordered. Boring!",
+      "You have received a mysterious cake with the following message: 01001101 01100001 01100100 01100101 00100000 01111001 01101111 01110101 00100000 01101100 01101111 01101111 01101011",
+      "You have received: Yellow cake uranium. Do you hear sirens getting louder?",
+      "Success! You have received: A fully baked and frosted cake! It is delivered to your doorstep and is handed to you with a flourish by a Duff Goldman impersonator. YOU WIN!", 
+    ]
 
-puts messages.sample
+    return messages.sample
+  end
+end
+
+puts Cake.new.messages
